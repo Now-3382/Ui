@@ -109,8 +109,8 @@ function library:Window(name)
 
     UiWindow.Name = "UiWindow"
     UiWindow.Parent = TurtleUiLib
-    UiWindow.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-    UiWindow.BorderColor3 = Color3.fromRGB(73, 73, 73)
+    UiWindow.BackgroundColor3 = Color3.fromRGB(29,29,29)
+    UiWindow.BorderColor3 = Color3.fromRGB(84,84,84)
     UiWindow.Position = UDim2.new(0, xOffset, 0, 20)
     UiWindow.Size = UDim2.new(0, 207, 0, 33)
     UiWindow.ZIndex = 4 + zindex
@@ -122,8 +122,8 @@ function library:Window(name)
     local Header = Instance.new("Frame")
     Header.Name = "Header"
     Header.Parent = UiWindow
-    Header.BackgroundColor3 = Color3.fromRGB(0, 168, 255)
-    Header.BorderColor3 = Color3.fromRGB(0, 168, 255)
+    Header.BackgroundColor3 = Color3.fromRGB(29,29,29)
+    Header.BorderColor3 = Color3.fromRGB(84,84,84)
     Header.Position = UDim2.new(0, 0, -0.0202544238, 0)
     Header.Size = UDim2.new(0, 207, 0, 26)
     Header.ZIndex = 5 + zindex
@@ -138,7 +138,7 @@ function library:Window(name)
     HeaderText.ZIndex = 6 + zindex
     HeaderText.Font = Enum.Font.SourceSans
     HeaderText.Text = name or "Window"
-    HeaderText.TextColor3 = Color3.fromRGB(255, 255, 255)
+    HeaderText.TextColor3 = Color3.fromRGB(0,0,0)
     HeaderText.TextSize = 17.000
 
     local Minimise = Instance.new("TextButton")
@@ -165,8 +165,8 @@ function library:Window(name)
 
     Window.Name = "Window"
     Window.Parent = Header
-    Window.BackgroundColor3 = Color3.fromRGB(41, 41, 41)
-    Window.BorderColor3 = Color3.fromRGB(41, 41, 41)
+    Window.BackgroundColor3 = Color3.fromRGB(29,29,29)
+    Window.BorderColor3 = Color3.fromRGB(84,84,84)
     Window.Position = UDim2.new(0, 0, 0, 0)
     Window.Size = UDim2.new(0, 207, 0, 33)
     Window.ZIndex = 1 + zindex
@@ -255,7 +255,7 @@ function library:Window(name)
         ToggleDescription.Size = UDim2.new(0, 131, 0, 26)
         ToggleDescription.Font = Enum.Font.SourceSans
         ToggleDescription.Text = text or "Toggle"
-        ToggleDescription.TextColor3 = Color3.fromRGB(0,0,0)
+        ToggleDescription.TextColor3 = Color3.fromRGB(255,255,255)
         ToggleDescription.TextSize = 16.000
         ToggleDescription.TextWrapped = true
         ToggleDescription.TextXAlignment = Enum.TextXAlignment.Left
