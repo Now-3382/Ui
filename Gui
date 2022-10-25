@@ -109,7 +109,7 @@ function library:Window(name)
 
     UiWindow.Name = "UiWindow"
     UiWindow.Parent = TurtleUiLib
-    UiWindow.BackgroundColor3 = Color3.fromRGB(29,29,29)
+    UiWindow.BackgroundColor3 = Color3.fromRGB(0, 58, 255)
     UiWindow.BorderColor3 = Color3.fromRGB(84,84,84)
     UiWindow.Position = UDim2.new(0, xOffset, 0, 20)
     UiWindow.Size = UDim2.new(0, 207, 0, 33)
@@ -122,7 +122,7 @@ function library:Window(name)
     local Header = Instance.new("Frame")
     Header.Name = "Header"
     Header.Parent = UiWindow
-    Header.BackgroundColor3 = Color3.fromRGB(29,29,29)
+    Header.BackgroundColor3 = Color3.fromRGB(0, 58, 255)
     Header.BorderColor3 = Color3.fromRGB(84,84,84)
     Header.Position = UDim2.new(0, 0, -0.0202544238, 0)
     Header.Size = UDim2.new(0, 207, 0, 26)
@@ -152,7 +152,7 @@ function library:Window(name)
     Minimise.ZIndex = 7 + zindex
     Minimise.Font = Enum.Font.SourceSansLight
     Minimise.Text = "X"
-    Minimise.TextColor3 = Color3.fromRGB(0, 0, 0)
+    Minimise.TextColor3 = Color3.fromRGB(255,255,255)
     Minimise.TextSize = 20.000
     Minimise.MouseButton1Up:connect(function()
         Window.Visible = not Window.Visible
