@@ -211,7 +211,7 @@ function library:Window(name)
         local Label = Instance.new("TextLabel")
         Label.Name = "Label"
         Label.Parent = Window
-        Label.BackgroundColor3 = Color3.fromRGB(0,0,0)
+        Label.BackgroundColor3 = Color3.fromRGB(255,255,255)
         Label.BackgroundTransparency = 1.000
         Label.BorderColor3 = Color3.fromRGB(27, 42, 53)
         Label.Position = UDim2.new(0, 0, 0, listOffset[winCount])
@@ -302,12 +302,12 @@ function library:Window(name)
         TextBox.Position = UDim2.new(0, 99, 0, listOffset[winCount])
         TextBox.Size = UDim2.new(0, 95, 0, 26)
         TextBox.Font = Enum.Font.SourceSans
-        TextBox.PlaceholderColor3 = Color3.fromRGB(0,0,0)
+        TextBox.PlaceholderColor3 = Color3.fromRGB(255,255,255)
         TextBox.PlaceholderText = "..."
         TextBox.Text = ""
-        TextBox.TextColor3 = Color3.fromRGB(0,0,0)
+        TextBox.TextColor3 = Color3.fromRGB(255,255,255)
         TextBox.TextSize = 16.000
-        TextBox.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+        TextBox.TextStrokeColor3 = Color3.fromRGB(255,255,255)
         TextBox.ZIndex = 2 + zindex
         TextBox:GetPropertyChangedSignal('Text'):connect(function()
             callback(TextBox.Text, false)
@@ -324,7 +324,7 @@ function library:Window(name)
         BoxDescription.Size = UDim2.new(0, 75, 0, 26)
         BoxDescription.Font = Enum.Font.SourceSans
         BoxDescription.Text = text or "Box"
-        BoxDescription.TextColor3 = Color3.fromRGB(0,0,0)
+        BoxDescription.TextColor3 = Color3.fromRGB(255,255,255)
         BoxDescription.TextSize = 16.000
         BoxDescription.TextXAlignment = Enum.TextXAlignment.Left
         BoxDescription.ZIndex = 2 + zindex
@@ -424,7 +424,7 @@ function library:Window(name)
         Current.Size = UDim2.new(0, 0, 0, 18)
         Current.Font = Enum.Font.SourceSans
         Current.Text = tostring(default)
-        Current.TextColor3 = Color3.fromRGB(0,0,0)
+        Current.TextColor3 = Color3.fromRGB(255,255,255)
         Current.TextSize = 14.000  
         Current.ZIndex = 2 + zindex
 
