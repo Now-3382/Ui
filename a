@@ -53,8 +53,6 @@ function Dragify(obj)
 end)
 end
 
--- Instances:
-
 local function protect_gui(obj) 
 if destroyed then
    obj.Parent = game.CoreGui
@@ -145,28 +143,28 @@ function library:Window(name)
     local Window = Instance.new("Frame")
     Minimise.Name = "Minimise"
     Minimise.Parent = Header
-    Minimise.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
-    Minimise.BorderColor3 = Color3.fromRGB(0, 168, 255)
+    Minimise.BackgroundColor3 = Color3.fromRGB(17,17,17)
+    Minimise.BorderColor3 = Color3.fromRGB(161, 165, 162)
     Minimise.Position = UDim2.new(0, 185, 0, 2)
     Minimise.Size = UDim2.new(0, 22, 0, 22)
     Minimise.ZIndex = 7 + zindex
     Minimise.Font = Enum.Font.SourceSansLight
-    Minimise.Text = "_"
+    Minimise.Text = "𝙑"
     Minimise.TextColor3 = Color3.fromRGB(0, 0, 0)
     Minimise.TextSize = 20.000
     Minimise.MouseButton1Up:connect(function()
         Window.Visible = not Window.Visible
 	if Window.Visible then
-		Minimise.Text = "_"
+		Minimise.Text = "𝙑"
 	else
-		Minimise.Text = "+"
+		Minimise.Text = "𝑿"
 	end
     end)
 
     Window.Name = "Window"
     Window.Parent = Header
-    Window.BackgroundColor3 = Color3.fromRGB(47, 54, 64)
-    Window.BorderColor3 = Color3.fromRGB(47, 54, 64)
+    Window.BackgroundColor3 = Color3.fromRGB(109, 110, 108)
+    Window.BorderColor3 = Color3.fromRGB(161, 165, 162)
     Window.Position = UDim2.new(0, 0, 0, 0)
     Window.Size = UDim2.new(0, 207, 0, 33)
     Window.ZIndex = 1 + zindex
@@ -185,8 +183,8 @@ function library:Window(name)
         listOffset[winCount] = listOffset[winCount] + 32
         Button.Name = "Button"
         Button.Parent = Window
-        Button.BackgroundColor3 = Color3.fromRGB(53, 59, 72)
-        Button.BorderColor3 = Color3.fromRGB(113, 128, 147)
+        Button.BackgroundColor3 = Color3.fromRGB(87, 88, 87)
+        Button.BorderColor3 = Color3.fromRGB(161, 165, 162)
         Button.Position = UDim2.new(0, 12, 0, listOffset[winCount])
         Button.Size = UDim2.new(0, 182, 0, 26)
         Button.ZIndex = 2 + zindex
@@ -213,7 +211,7 @@ function library:Window(name)
         Label.Parent = Window
         Label.BackgroundColor3 = Color3.fromRGB(220, 221, 225)
         Label.BackgroundTransparency = 1.000
-        Label.BorderColor3 = Color3.fromRGB(27, 42, 53)
+        Label.BorderColor3 = Color3.fromRGB(161, 165, 162)
         Label.Position = UDim2.new(0, 0, 0, listOffset[winCount])
         Label.Size = UDim2.new(0, 206, 0, 29)
         Label.Font = Enum.Font.SourceSans
@@ -263,8 +261,8 @@ function library:Window(name)
 
         ToggleButton.Name = "ToggleButton"
         ToggleButton.Parent = ToggleDescription
-        ToggleButton.BackgroundColor3 = Color3.fromRGB(47, 54, 64)
-        ToggleButton.BorderColor3 = Color3.fromRGB(113, 128, 147)
+        ToggleButton.BackgroundColor3 = Color3.fromRGB(	242, 243, 243)
+        ToggleButton.BorderColor3 = Color3.fromRGB(242, 243, 243)
         ToggleButton.Position = UDim2.new(1.2061069, 0, 0.0769230798, 0)
         ToggleButton.Size = UDim2.new(0, 22, 0, 22)
         ToggleButton.Font = Enum.Font.SourceSans
@@ -279,8 +277,8 @@ function library:Window(name)
 
         ToggleFiller.Name = "ToggleFiller"
         ToggleFiller.Parent = ToggleButton
-        ToggleFiller.BackgroundColor3 = Color3.fromRGB(68, 189, 50)
-        ToggleFiller.BorderColor3 = Color3.fromRGB(47, 54, 64)
+        ToggleFiller.BackgroundColor3 = Color3.fromRGB(87, 88, 87)
+        ToggleFiller.BorderColor3 = Color3.fromRGB(161, 165, 162)
         ToggleFiller.Position = UDim2.new(0, 5, 0, 5)
         ToggleFiller.Size = UDim2.new(0, 12, 0, 12)
         ToggleFiller.Visible = on
@@ -297,8 +295,8 @@ function library:Window(name)
         local TextBox = Instance.new("TextBox")
         local BoxDescription = Instance.new("TextLabel")
         TextBox.Parent = Window
-        TextBox.BackgroundColor3 = Color3.fromRGB(53, 59, 72)
-        TextBox.BorderColor3 = Color3.fromRGB(113, 128, 147)
+        TextBox.BackgroundColor3 = Color3.fromRGB(87, 88, 87)
+        TextBox.BorderColor3 = Color3.fromRGB(161, 165, 162)
         TextBox.Position = UDim2.new(0, 99, 0, listOffset[winCount])
         TextBox.Size = UDim2.new(0, 95, 0, 26)
         TextBox.Font = Enum.Font.SourceSans
