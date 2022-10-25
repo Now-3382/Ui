@@ -131,22 +131,22 @@ function library:Window(name)
     local HeaderText = Instance.new("TextLabel")
     HeaderText.Name = "HeaderText"
     HeaderText.Parent = Header
-    HeaderText.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+    HeaderText.BackgroundColor3 = Color3.fromRGB(0, 155, 213)
     HeaderText.BackgroundTransparency = 1.000
     HeaderText.Position = UDim2.new(0, 0, -0.0020698905, 0)
     HeaderText.Size = UDim2.new(0, 206, 0, 33)
     HeaderText.ZIndex = 6 + zindex
     HeaderText.Font = Enum.Font.SourceSans
     HeaderText.Text = name or "Window"
-    HeaderText.TextColor3 = Color3.fromRGB(0,0,0)
+    HeaderText.TextColor3 = Color3.fromRGB(255,255,255)
     HeaderText.TextSize = 17.000
 
     local Minimise = Instance.new("TextButton")
     local Window = Instance.new("Frame")
     Minimise.Name = "Minimise"
     Minimise.Parent = Header
-    Minimise.BackgroundColor3 = Color3.fromRGB(0, 58, 255)
-    Minimise.BorderColor3 = Color3.fromRGB(0, 185, 255)
+    Minimise.BackgroundColor3 = Color3.fromRGB(29,29,29)
+    Minimise.BorderColor3 = Color3.fromRGB(0, 155, 213)
     Minimise.Position = UDim2.new(0, 185, 0, 2)
     Minimise.Size = UDim2.new(0, 22, 0, 22)
     Minimise.ZIndex = 7 + zindex
